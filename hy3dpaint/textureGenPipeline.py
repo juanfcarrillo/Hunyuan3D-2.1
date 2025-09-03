@@ -54,9 +54,9 @@ class Hunyuan3DPaintConfig:
         self.merge_method = "fast"
 
         # view selection
-        self.candidate_camera_azims = [0, 90, 180, 270, 0, 180]
-        self.candidate_camera_elevs = [0, 0, 0, 0, 90, -90]
-        self.candidate_view_weights = [1, 0.1, 0.5, 0.1, 0.05, 0.05]
+        self.candidate_camera_azims = [0, 180, 90, 270, 45, 135, 0, 0]
+        self.candidate_camera_elevs = [0, 0, 0, 0, 0, 0, 45, -45]
+        self.candidate_view_weights = [2.0, 2.0, 1.5, 1.5, 0.5, 0.5, 0.5, 0.5]
 
         for azim in range(0, 360, 30):
             self.candidate_camera_azims.append(azim)
