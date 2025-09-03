@@ -1,0 +1,83 @@
+# Ignore Docker-related files
+Dockerfile*
+.dockerignore
+
+# Don't ignore the docker/ directory as it contains needed files
+# docker/
+
+# Ignore Git files
+.git/
+.gitignore
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Ignore virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore test files
+test_*.py
+*_test.py
+tests/
+
+# Ignore documentation
+docs/
+*.md
+LICENSE
+NOTICE
+Notice.txt
+
+# Ignore example images (they're large and not needed for runtime)
+assets/example_images/
+assets/images/
+
+# Ignore training examples and configs that aren't needed for inference
+hy3dpaint/train_examples/
+hy3dshape/demos/
+hy3dshape/scripts/
+
+# Keep only essential model files
+# Note: You may want to exclude large model checkpoints if they're not needed
+
+.git
+.gitignore
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+*.log
+.pytest_cache
+.coverage
+.mypy_cache
